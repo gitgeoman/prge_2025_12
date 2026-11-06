@@ -1,8 +1,11 @@
 x-environment:
   #DB
-  - &env-postgres-db POSTGRES_DB=${POSTGRES_DB}
-  - &env-postgres-user POSTGRES_USER=${POSTGRES_USER}
-  - &env-postgres-password POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+  - &env-postgres-db POSTGRES_DB=${POSTGRES_DB:?}
+  - &env-postgres-user POSTGRES_USER=${POSTGRES_USER:?}
+  - &env-postgres-password POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?}
+  # GeoServer
+  - &env-geoserver-user GEOSERVER_ADMIN_USER=${POSTGRES_USER:?}
+  - &env-geoserver-pass GEOSERVER_ADMIN_PASSWORD=${POSTGRES_PASSWORD:?}
 
 services:
   postgis:
@@ -26,6 +29,13 @@ services:
       dockerfile: docker/geoserver/Dockerfile
     image: 'prge_2025_geoserver'
     container_name: 'prge_2025_geoserver'
+    environment:
+      - SKIP_DEMO_DATA=true
+      - *env-postgres-db
+      - *env-postgres-user
+      - *env-postgres-password
+      - *env-geoserver-user
+      - *env-geoserver-pass
     ports:
       - 9000:8080
     volumes:
