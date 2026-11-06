@@ -24,8 +24,10 @@
     <styleParameterFilter>
       <key>STYLES</key>
       <defaultValue></defaultValue>
-      <availableStyles class="sorted-set"/>
-      <defaultStyle>polygon</defaultStyle>
+      <availableStyles class="sorted-set">
+        <string>AAL020_zabudowa_A</string>
+      </availableStyles>
+      <defaultStyle>AAL020_zabudowa_A</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

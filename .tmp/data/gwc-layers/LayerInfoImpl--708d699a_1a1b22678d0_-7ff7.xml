@@ -24,8 +24,10 @@
     <styleParameterFilter>
       <key>STYLES</key>
       <defaultValue></defaultValue>
-      <availableStyles class="sorted-set"/>
-      <defaultStyle>line</defaultStyle>
+      <availableStyles class="sorted-set">
+        <string>LBH140_rzeki_L</string>
+      </availableStyles>
+      <defaultStyle>LBH140_rzeki_L</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

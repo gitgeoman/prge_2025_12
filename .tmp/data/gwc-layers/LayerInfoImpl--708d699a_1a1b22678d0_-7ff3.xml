@@ -3,15 +3,31 @@
   <enabled>true</enabled>
   <name>prge:PEC015__Clip</name>
   <mimeFormats>
-    <string>image/png</string>
     <string>image/jpeg</string>
+    <string>image/png</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
-      <gridSetName>EPSG:4326</gridSetName>
+      <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>1612614.7045157705</double>
+          <double>6731720.929078265</double>
+          <double>2013712.0653400326</double>
+          <double>6812842.636985666</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
-      <gridSetName>EPSG:900913</gridSetName>
+      <gridSetName>EPSG:4326</gridSetName>
+      <extent>
+        <coords>
+          <double>14.486364364624023</double>
+          <double>51.62008285522461</double>
+          <double>18.0894832611084</double>
+          <double>52.07027816772461</double>
+        </coords>
+      </extent>
     </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
@@ -24,8 +40,10 @@
     <styleParameterFilter>
       <key>STYLES</key>
       <defaultValue></defaultValue>
-      <availableStyles class="sorted-set"/>
-      <defaultStyle>point</defaultStyle>
+      <availableStyles class="sorted-set">
+        <string>polygon</string>
+      </availableStyles>
+      <defaultStyle>polygon</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

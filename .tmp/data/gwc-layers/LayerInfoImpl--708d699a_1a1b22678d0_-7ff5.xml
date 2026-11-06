@@ -25,7 +25,7 @@
       <key>STYLES</key>
       <defaultValue></defaultValue>
       <availableStyles class="sorted-set"/>
-      <defaultStyle>line</defaultStyle>
+      <defaultStyle>LEC015_zadrzewienia_L</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>

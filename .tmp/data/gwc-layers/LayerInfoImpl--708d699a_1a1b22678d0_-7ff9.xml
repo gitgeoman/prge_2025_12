@@ -9,9 +9,25 @@
   <gridSubsets>
     <gridSubset>
       <gridSetName>EPSG:4326</gridSetName>
+      <extent>
+        <coords>
+          <double>14.482135772705078</double>
+          <double>51.619171142578125</double>
+          <double>18.090656280517578</double>
+          <double>52.07084655761719</double>
+        </coords>
+      </extent>
     </gridSubset>
     <gridSubset>
       <gridSetName>EPSG:900913</gridSetName>
+      <extent>
+        <coords>
+          <double>1612143.979816581</double>
+          <double>6731557.465116769</double>
+          <double>2013842.6452633531</double>
+          <double>6812945.571502388</double>
+        </coords>
+      </extent>
     </gridSubset>
   </gridSubsets>
   <metaWidthHeight>
@@ -24,8 +40,10 @@
     <styleParameterFilter>
       <key>STYLES</key>
       <defaultValue></defaultValue>
-      <availableStyles class="sorted-set"/>
-      <defaultStyle>line</defaultStyle>
+      <availableStyles class="sorted-set">
+        <string>LAP030_drogi_L</string>
+      </availableStyles>
+      <defaultStyle>LAP030_drogi_uniwersalny-v2</defaultStyle>
     </styleParameterFilter>
   </parameterFilters>
   <gutter>0</gutter>
