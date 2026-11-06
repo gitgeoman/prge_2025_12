@@ -28,6 +28,10 @@ const routes = createHashRouter(
             element: <NewUser/>
         },
         {
+            path: '/newuser',
+            element: <NewUser/>
+        },
+        {
             path: '*',
             element: <div>404</div>
         }

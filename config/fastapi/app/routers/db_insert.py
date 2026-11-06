@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from pydantic import BaseModel
 from sqlalchemy import create_engine, text
 from pydantic import BaseModel
 
@@ -45,4 +46,4 @@ async def insert_user(user: UserData):
         print(e)
         raise e
 
-    return {"statu": 1}
+    return {"status": 1}
