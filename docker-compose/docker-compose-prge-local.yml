@@ -3,6 +3,7 @@ x-environment:
   - &env-postgres-db POSTGRES_DB=${POSTGRES_DB:?}
   - &env-postgres-user POSTGRES_USER=${POSTGRES_USER:?}
   - &env-postgres-password POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?}
+  - &env-postgres-port POSTGRES_PORT=${POSTGRES_PORT:?}
   # GeoServer
   - &env-geoserver-user GEOSERVER_ADMIN_USER=${POSTGRES_USER:?}
   - &env-geoserver-pass GEOSERVER_ADMIN_PASSWORD=${POSTGRES_PASSWORD:?}
@@ -31,11 +32,13 @@ services:
     container_name: 'prge_2025_geoserver'
     environment:
       - SKIP_DEMO_DATA=true
+      - EXTRA_JAVA_OPTS=-DALLOW_ENV_PARAMETRIZATION=true
       - *env-postgres-db
       - *env-postgres-user
       - *env-postgres-password
       - *env-geoserver-user
       - *env-geoserver-pass
+      - *env-postgres-port
     ports:
       - 9000:8080
     volumes:
