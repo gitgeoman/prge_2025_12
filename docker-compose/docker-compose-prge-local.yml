@@ -7,6 +7,11 @@ x-environment:
   # GeoServer
   - &env-geoserver-user GEOSERVER_ADMIN_USER=${POSTGRES_USER:?}
   - &env-geoserver-pass GEOSERVER_ADMIN_PASSWORD=${POSTGRES_PASSWORD:?}
+  # Minio
+  - &env-minio-user MINIO_ROOT_USER=${MINIO_ROOT_USER:?}
+  - &env-minio-pass MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:?}
+
+
 
 services:
   postgis:
@@ -23,6 +28,23 @@ services:
       - 5443:5432
     volumes:
       - postgis-prge-2025-data:/var/lib/postgresql/data
+
+  minio:
+    image: bitnamilegacy/minio:2025.7.23-debian-12-r5
+    container_name: prge_2025_minio
+    restart: unless-stopped
+    environment:
+      - *env-minio-user
+      - *env-minio-pass
+      - MINIO_API_PORT_NUMBER=9000
+      - MINIO_CONSOLE_PORT_NUMBER=9001
+      - MINIO_BROWSER=on
+      - MINIO_BROWSER_REDIRECT_URL=http://localhost:9002
+    ports:
+      - "9001:9000"  # S3 API
+      - "9002:9001"  # Panel administracyjny
+    volumes:
+      - minio-prge-2025-data:/bitnami/minio/data
 
   geoserver:
     build:
@@ -88,3 +110,4 @@ services:
 
 volumes:
   postgis-prge-2025-data:
+  minio-prge-2025-data:
