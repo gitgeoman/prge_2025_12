@@ -1,0 +1,22 @@
+<layer>
+  <name>LAP030__Clip</name>
+  <id>LayerInfoImpl--708d699a:1a1b22678d0:-7ff9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--708d699a:1a1b22678d0:-7fd8</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--708d699a:1a1b22678d0:-7fea</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--708d699a:1a1b22678d0:-7ffa</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2026-11-06 18:38:03.936 UTC</dateCreated>
+  <dateModified>2026-11-06 20:07:18.647 UTC</dateModified>
+</layer>

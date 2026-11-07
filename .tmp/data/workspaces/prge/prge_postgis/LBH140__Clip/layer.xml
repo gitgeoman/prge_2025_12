@@ -1,0 +1,22 @@
+<layer>
+  <name>LBH140__Clip</name>
+  <id>LayerInfoImpl--708d699a:1a1b22678d0:-7ff7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--708d699a:1a1b22678d0:-7fec</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--708d699a:1a1b22678d0:-7fec</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--708d699a:1a1b22678d0:-7ff8</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2026-11-06 18:38:19.515 UTC</dateCreated>
+  <dateModified>2026-11-06 19:41:43.200 UTC</dateModified>
+</layer>

@@ -1,0 +1,17 @@
+<layer>
+  <name>LEC015__Clip</name>
+  <id>LayerInfoImpl--708d699a:1a1b22678d0:-7ff5</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--708d699a:1a1b22678d0:-7feb</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--708d699a:1a1b22678d0:-7ff6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2026-11-06 18:38:48.825 UTC</dateCreated>
+  <dateModified>2026-11-06 19:42:00.423 UTC</dateModified>
+</layer>

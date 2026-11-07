@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from sqlalchemy import create_engine, text
+from pydantic import BaseModel
 
 from app.settings import db_name, db_user, db_password
 

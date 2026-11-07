@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button} from "@mui/material";
 import {Link} from "react-router-dom";
+import {NewUser} from "../routes/LazyImports";
 
 function Services(props) {
     return <div>
@@ -15,7 +16,6 @@ function Services(props) {
             PRZEJDŹ DO MAPY
         </Button>
 
-
         <Button
             className='services__button'
             variant='contained'
@@ -23,9 +23,8 @@ function Services(props) {
             component={Link}
             to='/list'
         >
-            PRZEJDŹ listy użytkowników
+            PRZEJDŹ DO listy
         </Button>
-
         <Button
             className='services__button'
             variant='contained'
@@ -33,7 +32,7 @@ function Services(props) {
             component={Link}
             to='/newuser'
         >
-            Dodaj nowego użytkownika
+            dodaj użytkownika
         </Button>
     </div>
 
