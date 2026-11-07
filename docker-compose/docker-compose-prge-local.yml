@@ -54,7 +54,7 @@ services:
     container_name: 'prge_2025_geoserver'
     environment:
       - SKIP_DEMO_DATA=true
-      - EXTRA_JAVA_OPTS=-DALLOW_ENV_PARAMETRIZATION=true
+      - EXTRA_JAVA_OPTS=-DALLOW_ENV_PARAMETRIZATION=true -Ds3.properties.location=/opt/geoserver/data_dir/s3.properties
       - *env-postgres-db
       - *env-postgres-user
       - *env-postgres-password
@@ -62,7 +62,7 @@ services:
       - *env-geoserver-pass
       - *env-postgres-port
     ports:
-      - 9000:8080
+      - 8500:8080
     volumes:
       - ../.tmp/data:/opt/geoserver_data
       - ../.tmp/geoserver-config:/opt/geoserver/data_dir

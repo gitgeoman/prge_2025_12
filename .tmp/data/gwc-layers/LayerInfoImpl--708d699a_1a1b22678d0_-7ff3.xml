@@ -3,8 +3,8 @@
   <enabled>true</enabled>
   <name>prge:PEC015__Clip</name>
   <mimeFormats>
-    <string>image/jpeg</string>
     <string>image/png</string>
+    <string>image/jpeg</string>
   </mimeFormats>
   <gridSubsets>
     <gridSubset>
